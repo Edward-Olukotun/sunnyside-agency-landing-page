@@ -27,7 +27,7 @@ function Navbar() {
             </li>
           </ul>
           <div className="  items-center  md:ml-[40%] hidden md:flex  ">
-            <button className=" hover:border border-gray-700 mx-5 bg-white hover:bg-Darkblue w-20 rounded-xl hover:text-gray-300">
+            <button className="hover:text-white uppercase font-semibold  bg-white hover:bg-Darkblue w-24 rounded-xl text-gray-900">
               contact
             </button>
           </div>
@@ -42,7 +42,6 @@ function Navbar() {
         {nav ? (
           <AiOutlineClose className="text-black" size={20} />
         ) : (
-
           <img src={hamburger} alt="/" />
         )}
       </div>
@@ -51,31 +50,26 @@ function Navbar() {
       <div
         className={
           nav
-            ? "absolute text-black left-0  top-0 h-[50%] w-[50%] ml-[50%]  bg-black px-4 py-14  flex flex-col"
+            ? "absolute text-black left-0 z-10 top-[100%] h-[400%] w-[80%] ml-10  bg-white px-4 py-14  flex flex-col"
             : "absolute left-0 top-[-1000%]"
         }
       >
-        {/* <div className="flex flex-col ">
-
-          <div className="hidden md:flex justify-start  ml-[20%] lg:ml-[70%]">
-            <ul className="hidden md:flex  text-white">
-              <li className="mx-4 hover:cursor-pointer hover:text-gray-300">
-                About
-              </li>
-              <li className="mx-4 hover:cursor-pointer hover:text-gray-300">
-                Services
-              </li>
-              <li className="mx-4 hover:cursor-pointer hover:text-gray-300">
-                Projects
-              </li>
-            </ul>
-            <div className="  items-center  md:ml-[40%] hidden md:flex  ">
-              <button className=" hover:border border-gray-700 mx-5 bg-white hover:bg-Darkblue w-20 rounded-xl hover:text-gray-300">
-                contact
-              </button>
-            </div>
-          </div>
-        </div> */}
+        <div className="flex flex-col mx-auto w-fit">
+          <ul className="flex flex-col  text-gray-400 font-semibold ">
+            <li className="my-3 hover:cursor-pointer hover:text-gray-300">
+              About
+            </li>
+            <li className="my-3 hover:cursor-pointer hover:text-gray-300">
+              Services
+            </li>
+            <li className="my-3 hover:cursor-pointer hover:text-gray-300">
+              Projects
+            </li>
+          </ul>
+          <button className="-ml-5 font-bold text-Verydarkdesaturatedblue uppercase rounded-2xl bg-Yellow w-24 h-8 my-5">
+            contact
+          </button>
+        </div>
       </div>
     </div>
   );

@@ -5,7 +5,7 @@ import Main from './componets/Main';
 
 function App() {
   return (
-    <div className="App w-[100%] mr-[80%]">
+    <div className="App w-[100%] ">
       <Navbar />
       <Main />
     </div>
