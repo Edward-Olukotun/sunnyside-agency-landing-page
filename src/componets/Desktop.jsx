@@ -23,9 +23,9 @@ function Desktop() {
       <div>
         <div className="-mt-20">
           <img src={header} className="relative w-screen h-[30%] " alt="/" />
-          <div className="absolute   -mt-[40%] ml-[40%] text-5xl font-bold text-white">
+          <div className="absolute flex  -mt-[40%] ml-[30%] text-5xl font-bold text-white">
             <p className="ml-12 tracking-wide">WE ARE </p>
-            <p className="tracking-widest">CREATIVES</p>
+            <p className="tracking-widest mx-4">CREATIVES</p>
           </div>
           <div className="absolute  w-32 -mt-[30%] ml-[48%]">
             <img src={arrow} alt="/" className="h-44" />
